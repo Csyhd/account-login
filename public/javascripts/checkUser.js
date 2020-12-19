@@ -28,9 +28,16 @@ const users = [
 
 function checkUser(userInfo) {
   let user = users.find((user) => {
-    return user.email === userInfo.email && user.password === userInfo.password
+    return user.email === userInfo.email
   })
-  return user.firstName
-}
+  if (user) {
+    if (user.password === userInfo.password) {
+      return user.firstName
+    } else {
+      return 'wrongPassword'
+    }
+  }
+  return 'NotFind'
 
+}
 module.exports = checkUser

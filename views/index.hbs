@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row justify-content-center mt-5">
     <div class="col-5 text-center">
-      <h1>Account Login</h1>
+      <a href="/" class="h1">Account Login</a>
     </div>
   </div>
   <form action="/login" method="POST" class="row justify-content-center mt-2">
@@ -9,8 +9,8 @@
       <div class="row justify-content-center mt-2">
         <div class="form-group col-5">
           {{!-- <label for="Email">Email address</label> --}}
-          <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email"
-            name="email">
+          <input type="email" class="form-control" id="Email" placeholder="Email" name="email">
+          <small id="email" class="form-text text-danger">{{userNotFind}}</small>
         </div>
       </div>
     </div>
@@ -19,6 +19,8 @@
         <div class="form-group col-5">
           {{!-- <label for="Password">Password</label> --}}
           <input type="password" class="form-control" id="Password" placeholder="Password" name="password">
+          <small id="Password" class="form-text text-danger">{{passwordWrong}}</small>
+
         </div>
       </div>
     </div>
