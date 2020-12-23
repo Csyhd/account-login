@@ -10,7 +10,7 @@ Login檢查
 ## 如何使用
 
 1.下載
-    + 使用Terminal  輸入 git clone https://github.com/Csyhd/tiny-URL.git
+    + 使用Terminal  輸入 git clone https://github.com/Csyhd/account-login.git
 
 2.進入
     + 使用cd 進入到下載完成的資料夾
